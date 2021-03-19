@@ -17,3 +17,13 @@ therichest = ([sum(i) for i in accounts])
   print (max(therichest))
 
   
+# 리트코드 답
+
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        
+        accounts = [sum(i) for i in accounts]
+
+        return max(accounts)
+      
+      
