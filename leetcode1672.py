@@ -6,12 +6,14 @@
 
 accounts = [[1,5],[7,3],[3,5]]  
 
+# 리스트 내 리스트 합 구하기 
 therichest = ([sum(i) for i in accounts]) 
 
- # 리스트 내 리스트 합 구하기 
   # 질문? 1. accounts 내 리스트가 어떻게 i로 들어가는 것일까? 
   #      2. []가 의미하는 것은? 
   #      3. 대체 함수로 어떻게 만드는거지...?
 
   
   print (max(therichest))
+
+  
