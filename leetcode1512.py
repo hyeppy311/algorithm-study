@@ -4,9 +4,14 @@
 # 4. 3의 갯수 구하기 
 
 nums = [1,2,3,1,1,3]
+
+
+
+
+# 답 
 class Solution:
     def numIdenticalPairs(self, nums) :
-        f={}
+        f={}               # 딕셔너리 : key 값에 대응하는 value 값 할당 (왜쓰는데,,,)
         ans=0
         for num in nums:
           if not num in f:
