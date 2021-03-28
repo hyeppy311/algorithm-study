@@ -22,3 +22,21 @@ class Solution:
             n=f[num]
             ans+=(n*(n-1)//2)
         return ans
+
+    
+    
+#대빵뫀 answer
+
+class Solution:
+    def numIdenticalPairs(self, nums: List[int]) -> int:
+        f={}
+        ans=0
+        for num in nums:
+            if num in f:
+                ans += (f[num] + 1)
+                f[num] += 1
+            elif not num in f:
+                f[num] = 0
+        return ans
+    
+    
