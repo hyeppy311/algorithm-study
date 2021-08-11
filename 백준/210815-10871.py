@@ -3,7 +3,6 @@
 n,x = map(int,input().split())
 a = list(range(1,1+n))   # n값을 받아와서 리스트를 만드는것임.. 
 
-
 for i in a : 
   if i < x :
     print(i, end = ' ')
