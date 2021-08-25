@@ -1,10 +1,17 @@
 import string 
 
-n = input()
+n = list(input())
 
 letter = list(string.ascii_lowercase)
 
-for n in letter : 
-  
-  
+a = [-1]*26
+
+for idx,i in enumerate(letter):
+  try:
+    a[idx] = n.index(i)
+  except:
+    pass
+
+for i in a:
+  print(i, end=' ')
   
