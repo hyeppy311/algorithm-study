@@ -22,3 +22,4 @@ for _ in range(n) :
 
 print(answer)
 
+
