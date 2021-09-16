@@ -1,17 +1,13 @@
-x_price = int(input())
-y_price = int(input())
-y_limit = int(input())
-y_plus = int(input())
-j_water = int(input())
 
-X = x_price * j_water
 
-if j_water <= y_limit :
-  print(y_price)
+a = int(input())          ## X사 1리터당 요금
+b = int(input())          ## Y사 기본요금
+c = int(input())          ## Y사 사용량 상한 
+d = int(input())          ## Y사 1리터당 추가요금
+p = int(input())          ## J군 한 달간 수도양 p 리터
 
-elif j_water > y_limit :
-  add_price = (j_water - y_limit)*y_plus
-  print(y_price+add_price)
+if p < c :
+  print(min(a*p,b))
 
-X = x_price * j_water
-
+elif p > c :
+  print(min(a*p, b+(p-c)*d))
