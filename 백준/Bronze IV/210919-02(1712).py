@@ -5,5 +5,4 @@ if b<c:
 else: 
     print(-1)
     
-    
-    
+   
