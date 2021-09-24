@@ -30,3 +30,5 @@ elif month < 2 or (month == 2 and day <= 17) :    ## 1월은 무조건 Before가
   print("Before")
 else :
   print('After')
+  
+  
