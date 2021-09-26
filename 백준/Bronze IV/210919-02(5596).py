@@ -12,3 +12,4 @@ else :
   
   
   
+a = sum(map(int, input().split())))
