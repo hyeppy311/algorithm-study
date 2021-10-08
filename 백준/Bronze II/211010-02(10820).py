@@ -28,3 +28,4 @@ while True:
 ## isdigit(): 숫자 
       
 ## EOFError : End Of File 파일의 끝. 
+
