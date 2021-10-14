@@ -14,7 +14,20 @@ elif len(number) == 3 :
 
 
 
+## 2 문제 해석 -> 11부터 1010까지 
 
-## 2 (3자리 수 이상 되는 것은 어떻게 해야될까,...) 
+
+
+
+## 3 수를 더해서 합해야 하는 수와의 차를 더해주기 
+
+n = list(input())
+
+if len(n) == 2 :
+  print(sum(map(int,n)))
+elif len(n) == 3 : 
+  print(sum(map(int,n))+9)
+elif len(n) == 4 :
+  print(sum(map(int,n))+18)
 
 
