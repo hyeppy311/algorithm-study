@@ -14,8 +14,20 @@ elif len(number) == 3 :
 
 
 
-## 2 문제 해석 -> 11부터 1010까지 
+## 2    
+n = list(input())
 
+if len(n) == 2 :
+    print(int(n[0])+int(n[1]))
+
+elif len(n) == 3 : 
+  if n[1] == "0" :            #101, 110 나눠주기 
+    print(10 + int(n[-1]))
+  else :
+    print(10 + int(n[0]))
+    
+else :
+  print(20)
 
 
 
@@ -29,5 +41,14 @@ elif len(n) == 3 :
   print(sum(map(int,n))+9)
 elif len(n) == 4 :
   print(sum(map(int,n))+18)
+  
+  
+## 짧은 코드
+
+s = input()
+if s[1] == '0':                     # 101~ 1010일 경우, 10과 인덱스2부터 끝까지 
+    print(10 + int(s[2:]))
+else:                               # 그 외 110 ~ 910의 경우 
+    print(int(s[0]) + int(s[1:]))   
 
 
