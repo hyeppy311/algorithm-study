@@ -7,6 +7,32 @@
 
 '''
 
+n = int(input())
+
+prize_17 = {5000000 : 1, 3000000 : 2, 2000000:3, 500000:4, 300000:5, 100000:6}
+
+prize_18 = {5120000: 1 , 2560000:2 , 1280000:4 , 
+640000:8, 320000:16}
+
+
+for _ in range(n) :
+  a,b = map(int, input().split())
+
+
+a_p = []
+for i in prize_17.values() :
+  if a-i < 0 :
+    a_p.append(prize_17.key())
+
+
+b_p = []
+for i in prize_17.values() :
+  if b-i < 0 :
+    b_p.append(prize_17.key())
+    
+
+## key값이 없음 ... 설정 다시해줘야함 
+
 
 t = int(input())
 
