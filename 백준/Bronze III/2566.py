@@ -41,3 +41,4 @@ for i in lst :
 print(max(tmp))
 print(tmp.index(max(tmp))+1, b+1)
 print(tmp.index(a)+1, b+1)
+
