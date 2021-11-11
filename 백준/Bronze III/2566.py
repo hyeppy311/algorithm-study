@@ -42,3 +42,20 @@ print(max(tmp))
 print(tmp.index(max(tmp))+1, b+1)
 print(tmp.index(a)+1, b+1)
 
+
+
+## 다른사람코드
+lst = [list(map(int,input().split())) for _ in range(9)]
+
+X = 0 
+Y = 0
+MAX = -1
+
+for i in range(9) :
+  for j in range(9) :
+    if lst[i][j] > MAX :    ## 2차원 리스트의 인덱스 활용
+      MAX = lst[i][j]     ## 최대값 2개 이상일때 조건을 넣어줄 필요 없이 값을 변수에 저장하고 계속 비교 후 최대값 출력
+      X = i+1
+      Y = j+1
+print(MAX)
+print(X, Y)
