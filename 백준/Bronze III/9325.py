@@ -30,4 +30,4 @@ for _ in range(T) :
     q,p = map(int, input().split())
     price += q*p          # 원래 차의 가격에 옵션 더해줌
     
-    print(price)
+  print(price)
