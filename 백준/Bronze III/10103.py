@@ -11,8 +11,8 @@ for _ in range(n) :
     sang -= c
   elif c < s :
     chang -= s
-  else :
-    chang = chang
-    sang = sang
+#   else :
+#     chang = chang
+#     sang = sang
 
 print(chang,sang, sep="\n")
