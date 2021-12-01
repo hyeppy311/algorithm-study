@@ -62,7 +62,7 @@ for i in lst:
   print(i)                 # 개수 넣어준 리스트 출력
   
 ----------------------------------------------------------------------
-# 이것은 내가 푼것같은뎁..? 
+## 전에 풀었던거 고친코드 
 
 a = int(input())
 b = int(input())
@@ -71,7 +71,7 @@ c = int(input())
 m = str(a*b*c)
 
 for i in range(10) :
-    print(m.count(str(i)))
+    print(m.count(str(i)))    
     
 
 
