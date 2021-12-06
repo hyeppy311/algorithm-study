@@ -24,3 +24,19 @@ for _ in range(n) :
   for i in b : 
     print(i*a, end = '')
   print() 
+
+  
+  ## 다른코드
+  
+n = int(input())
+
+for _ in range(n) :
+  times, letter = input().split()
+  temp = " "
+
+  for i in letter :
+    temp += i * int(times)   # 빈 문자열에 원소 하나씩 곱해서 추가
+  print(temp)
+
+  
+  
