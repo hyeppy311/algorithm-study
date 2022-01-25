@@ -13,3 +13,26 @@ for _ in range(n) :
 lst = sorted([k for k,v in tmp.items() if v >= 5])  # k는 key, v는 value로 설정. v의 값이 5이상이 되는 k값을 리스트에 저장
 
 print("".join(lst))
+
+
+
+n = int(input())
+
+tmp = dict()
+for _ in range(n) :
+  name = input()[0]
+  if tmp.get(name) :
+    tmp[name] += 1
+  else : 
+    tmp[name] = 1
+
+answer = []
+for k,v in tmp.items():
+  if v >= 5 : 
+    answer.append(k)
+
+answer.sort()
+
+if not answer : print("PREDAJA" )    
+else : print(''.join(answer))
+  
