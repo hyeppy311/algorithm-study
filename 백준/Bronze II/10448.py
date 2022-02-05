@@ -29,8 +29,8 @@ for i in triangle:
     for j in triangle:
         for k in triangle:
             if i+j+k <= 1000:                ## 세개의 수를 모두 더해서 1000이하면 
-                eureka[i+j+k] = 1            ## eureka의 [i+j+k]자리에 1을 넣는다 -> 왜지? 
+                eureka[i+j+k] = 1            ## eureka의 [i+j+k]자리에 1을 넣는다. 입력값이 3수의 합이 될 경우 1 
 
 T = int(input())
 for _ in range(T):
-    print(eureka[int(input())])
+    print(eureka[int(input())])    ## 입력값을 넣고 1출력
