@@ -1,6 +1,12 @@
+# 학년으로 나눈 후 성별로 나눈다
+# 성별로 나눈 후 학년으로 나눈다
+
+
+
+
 n, k = map(int, input().split())
 
-lst = [[0]*6 for _ in range(2)]
+lst = [[0]*6 for _ in range(2)]        # 빈 리스트를 만들어 주는게 ..!! 
 
 for _ in range(n) :
   s,y = map(int, input().split())
