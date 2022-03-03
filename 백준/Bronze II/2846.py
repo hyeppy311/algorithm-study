@@ -20,3 +20,5 @@ for i in range(N):                  # 여기 for문의 역할은 무엇인지? -
         else:                       # 성립하지 않는 경우 if문 빠져나와서 16라인의 for문으로 가서 A[i]의 값 설정 
             break
 print(maxGap)
+
+
