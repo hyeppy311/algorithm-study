@@ -13,3 +13,18 @@ for i in numbers :
 for k,v in dic.items() :
   if v == max(dic.values()) :
     print(k)                        # 최빈값
+
+    
+# 원소의 갯수를 세주는 라이브러리 
+
+from collections import Counter
+
+cnt = Counter(numbers)
+print(cnt)
+
+>>>
+Counter({30: 3, 40: 2, 60: 2, 10: 1, 20: 1, 50: 1})
+
+
+
+
