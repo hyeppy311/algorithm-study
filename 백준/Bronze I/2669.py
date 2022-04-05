@@ -10,7 +10,7 @@
 for _ in range(4) :
   L_x,L_y,R_x,R_y = map(int, input().split())
   
-  tmp = [[0] * 100 for _ in range(100)]  # range 범위 잘못됨 
+  tmp = [[0] * 100 for _ in range(100)]  # range 범위 잘못됨  # 리스트를 외부에 선언했어야 함 
 
   for i in range(R_x-L_x-1, R_x+1):    # 오른쪽 위 꼭지점으로 사각형을 카운트했는데 굳이 이렇게 할 필요 없었음  
     for j in range(R_y-L_y, R_y+1) :
@@ -38,5 +38,8 @@ answer = 0
 for row in paper:
     answer += sum(row)
 print(answer)
+
+
+
 
 
