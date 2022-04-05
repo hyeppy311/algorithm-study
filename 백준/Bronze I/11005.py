@@ -13,7 +13,11 @@ N,B = map(int, sys.stdin.readline().split())
 ans = ''
 
 while N != 0 :
-  ans += s[N % B]   # 나머지가 5이면 s[5] 반환
-  N // =B           # 몫을 계속 구해서 while문 돌게함 
+  ans += str(s[N%B])   # 나머지가 5이면 s[5] 반환
+  N = N // B          # 몫을 계속 구해서 while문 돌게함 
   
 print(ans[::-1])    # 뒤집어서 출력 
+
+
+# 진법계산 
+# B진법의 경우, B로 계속 나눈 나머지를 저장. 나머지가 0~9를 벗어날 경우 알파벳으로 표시
