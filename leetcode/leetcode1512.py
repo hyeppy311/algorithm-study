@@ -25,7 +25,7 @@ class Solution:
 
     
     
-#대빵뫀 answer
+# 스터디원 answer
 
 class Solution:
     def numIdenticalPairs(self, nums: List[int]) -> int:
