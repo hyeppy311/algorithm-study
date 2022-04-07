@@ -9,11 +9,11 @@ while True :
     break
 
   tmp = []
-  for i in range(1,n+1) :
+  for i in range(1,n+1) :      # n을 포함시키지 않는게 다음 조건문에서 코드가 더 보기좋아짐
     if n % i == 0 :
       tmp.append(i)
       
-  if sum(tmp)-n == n :
+  if sum(tmp)-n == n :          # sum(tmp) == n 
     for i in tmp :
       print(n = i + '+')      # 출력 6 = 1 + 2 + 3 이렇게 어떻게 해야할까? 
   else :
@@ -32,6 +32,8 @@ while True:
         if n % i == 0:
             arr.append(i)
     if sum(arr) == n:
-        print(n, " = ", " + ".join(str(i) for i in arr), sep="")
-    else:
+        print(n, " = ", " + ".join(str(i) for i in arr), sep="")   # str.join(iterable) # 띄어쓰기 유의
+    else:                                                          # f-string : print(f"{n} = {' + '.join(str(i) for i in arr)}")
         print(n, "is NOT perfect.")
+        
+
