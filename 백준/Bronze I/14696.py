@@ -28,7 +28,7 @@ for round_num in range(number_of_round):
     B.pop(0)
     
     #각 모양의 개수를 판단하기 위한 딕셔너리 생성
-    A_dic, B_dic = defaultdict(int), defaultdict(int)   # 기본값으로 int를 생성
+    A_dic, B_dic = defaultdict(int), defaultdict(int)   # 기본값으로 int를 생성 (0으로 입력됨)
     for num in A:
         A_dic[num] += 1
     for num in B:
