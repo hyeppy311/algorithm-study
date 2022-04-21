@@ -8,7 +8,7 @@
 n = int(input())
 
 cnt = 0
-for i in range(0,(n*10000)+5960) :
+for i in range(0,(n*10000)+5960) :    # 시,분,초를 나누지 않고 하는 경우 중복카운트 되서 더 많이 나옴 
   if "3" in str(i) :
     cnt += 1
 
