@@ -32,3 +32,9 @@ def bfs(graph, start, visited) :
         visited[i] = True        # 방문처리 
 
 bfs(graph,1,visited)
+
+# queue 리스트 변화
+# [1] -> [2,3,8] -> [3,8,7] -> [8,7,4,5] -> [7,4,5] -> [4,5,6] 
+# queue에 들어간 순서
+# 1 2 3 8 7 4 5 6
+
