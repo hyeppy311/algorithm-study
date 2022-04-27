@@ -31,6 +31,23 @@ for i in range(n):                          # score 리스트 [[100, 100, 63, 99
 for i in sum:                                # 플레이어의 점수 합계 출력 
     print(i)
 
+
+# 비슷한 간결한 코드
+
+N = int(input())
+players = []
+scores = [0]*N         # 참가자의 수 만큼 리스트 생성
+
+for n_round in zip(*players) :                   # zip() 결과 -> [(100, 100, 63, 99, 89), (99, 97, 89, 99, 97), (98, 92, 63, 99, 98)]
+  for i , score in enumerate(n_round) :
+    if n_round.count(score) == 1: 
+      scores[i] += score
+
+for score in scores :
+  print(score)
+
+---------------------------------------------------------------------------------
+
 # 처음 코드를 짤 때 2차원 리스트로 받아서 각 게임별로 어떻게 처리해야할지 헷갈렸음
 
 # 2차원 리스트로 입력받은 검색 코드
