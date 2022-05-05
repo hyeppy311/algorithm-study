@@ -22,6 +22,8 @@ flag를 넣는다
 완전 정렬이 되어있는 상태의 최선 O(n)
 '''
 
+import random
+
 # 기본 버블 정렬
 def bubblesort(data):
     for index in range(len(data)-1):
@@ -30,15 +32,14 @@ def bubblesort(data):
                 data[index2], data[index2 + 1] = data[index2 + 1] , data[index2] #swap
     return data
 
-import random
-
-
 data_list = random.sample(range(100),20)
 
 print(bubblesort(data_list))
 # [1, 4, 5, 10, 16, 17, 20, 25, 27, 37, 45, 47, 66, 67, 77, 78, 84, 89, 91, 95]
 
+
 # 정렬이 되있는 부분 넘어가기 (조건체크 횟수 줄이기)  
+
 def bubblesort_1(data):
     for index in range(len(data)-1):
         for index2 in range(len(data)-index-1):
@@ -79,6 +80,8 @@ print(bubblesort_2(data_list_2))
 
 # [1, 2, 3, 7, 8, 9, 5, 6, 4]
 # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
 
 # 정렬과정 보기
 
