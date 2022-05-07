@@ -35,7 +35,7 @@ for i in sum:                                # 플레이어의 점수 합계 출
 # 비슷한 간결한 코드
 
 N = int(input())
-players = []
+players = [list(map(int, input().split())) for _ in range(N)]
 scores = [0]*N         # 참가자의 수 만큼 리스트 생성
 
 for n_round in zip(*players) :                   # zip() 결과 -> [(100, 100, 63, 99, 89), (99, 97, 89, 99, 97), (98, 92, 63, 99, 98)]
@@ -45,6 +45,7 @@ for n_round in zip(*players) :                   # zip() 결과 -> [(100, 100, 6
 
 for score in scores :
   print(score)
+
 
 ---------------------------------------------------------------------------------
 
